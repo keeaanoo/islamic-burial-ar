@@ -1,11 +1,13 @@
 import React from 'react'
+import targetsMind from './assets/targets.mind?url'
+import modelGltf from './assets/model.gltf?url'
 
 const App = () => {
   return (
     <div className='w-screen h-screen'>
-<a-scene mindar-image="imageTargetSrc: src\assets\targets.mind; uiError:no; uiLoading:no; filterMinCF:0.001; filterBeta: 0.001;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights: false" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: true">
+      <a-scene mindar-image={`imageTargetSrc: ${targetsMind}; uiError:no; uiLoading:no; filterMinCF:0.001; filterBeta: 0.001;`} color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights: false" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: true">
         <a-assets>
-            <a-asset-item id="avatarModel" src="src\assets\model.gltf"></a-asset-item>
+          <a-asset-item id="avatarModel" src={modelGltf}></a-asset-item>
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
