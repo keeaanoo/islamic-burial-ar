@@ -1,5 +1,5 @@
 {
-  "homepage": "https://keeaanoo.github.io/ar-test/",
+  "homepage": "https://keeaanoo.github.io/islamic-burial-ar/",
   "name": "react-ar",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
+    "aframe-extras": "^7.7.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "tailwindcss": "^4.3.0"
@@ -29,5 +30,4 @@
     "globals": "^17.6.0",
     "vite": "^8.0.12"
   }
-  
 }
