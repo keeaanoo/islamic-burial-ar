@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import AR from './pages/AR';
 import LandingPage from './pages/LandingPage';
 import Doa from './pages/Doa';
+import Guide from './pages/ARGuide';
 
 
 const App = () => {
@@ -29,6 +30,12 @@ const App = () => {
         <Route
           path='/doa'
           element={<Doa/>}
+        />
+
+        
+        <Route
+          path='/guide'
+          element={<Guide/>}
         />
       </Routes>
     </BrowserRouter>

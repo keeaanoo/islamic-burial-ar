@@ -12,14 +12,14 @@ const Doa = () => {
       title: 'Doa untuk Jenazah (Laki-laki)',
       arab: 'اَللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ وَعَافِهِ وَاعْفُ عَنْهُ',
       latin: "Allahummaghfir lahu warhamhu wa 'afihi wa'fu 'anhu",
-      arti: 'Ya Allah, ampunilah dia, rahmatilah dia, berilah kesehatan dan maafkanlah dia.',
+      arti: 'Ya Allah, ampunilah dia, rahmatilah dia, sejahterakan dia, dan maafkanlah dia.',
     },
     {
       id: 2,
       title: 'Doa untuk Jenazah (Perempuan)',
       arab: 'اَللَّهُمَّ اغْفِرْ لَهَا وَارْحَمْهَا وَعَافِهَا وَاعْفُ عَنْهَا',
       latin: "'Allahummaghfir lahā warhamhā wa 'āfihā wa'fu 'anhā'",
-      arti: 'Ya Allah, ampunilah dia, rahmatilah dia, berilah kesehatan dan maafkanlah dia.',
+      arti: 'Ya Allah, ampunilah dia, rahmatilah dia, sejahterakan dia, dan maafkanlah dia.',
     },
     {
       id: 3,
@@ -55,25 +55,25 @@ const Doa = () => {
 
         {/* Konten Doa */}
         <div className="flex-1 overflow-y-auto p-4 space-y-4 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
-          <p className="text-sm text-gray-500 text-center mb-2">
+          <h1 className="text-lg text-gray-800 font-bold text-center mb-2">
             Bacaan doa untuk orang yang telah meninggal dunia
-          </p>
+          </h1>
 
           {doaList.map((doa) => (
             <div
               key={doa.id}
-              className="bg-emerald-50 rounded-xl p-4  border border-emerald-500 my-4"
+              className="bg-emerald-200/10 rounded-lg p-4  border border-emerald-500 my-4 drop-shadow-lg"
             >
               <h2 className="text-md font-bold text-emerald-800 mb-4">
                 {doa.title}
               </h2>
-              <p className="text-right text-2xl font-arabic leading-relaxed mb-2">
+              <p className="text-right text-4xl font-arabic leading-relaxed mb-4">
                 {doa.arab}
               </p>
               <p className="text-xs text-gray-600 italic mb-6">
                 {doa.latin}
               </p>
-              <p className="text-sm text-gray-700 border-t border-emerald-500 pt-2 mt-1">
+              <p className="text-sm text-gray-700 border-t border-emerald-800 pt-2 mt-1">
                 <span className="font-semibold">Arti:</span> {doa.arti}
               </p>
             </div>

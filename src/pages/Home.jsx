@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { Info, ScanLine, CheckCircle2 } from "lucide-react";
+import { Info, ScanLine, CheckCircle2, BookOpenText, ChevronRight, CircleQuestionMark } from "lucide-react";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -42,8 +42,8 @@ export default function Home() {
             <h1 className="scroll-m-20 text-center text-lg font-extrabold tracking-tight text-balance">
             Islamic Burial <span className="text-emerald-700">AR</span>
             </h1>
-            <button className="cursor-pointer hover:opacity-70 transition">
-                <Info color="gray" size={20} />
+            <button className="cursor-pointer hover:opacity-70 transition" onClick={() => navigate("/guide")}>
+                <CircleQuestionMark color="gray" size={20} />
             </button>
         </div>
 
@@ -176,6 +176,21 @@ export default function Home() {
               </button>
             </section>
 
+            <section className="mt-6">
+              <button
+                className="w-full h-20 bg-emerald-50 hover:bg-emerald-100 active:scale-[0.98] transition-all duration-150 rounded-xl border border-emerald-200 flex items-center gap-4 px-4 shadow-sm hover:shadow-md"
+                onClick={() => navigate("/doa")}
+              >
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-200/50 flex items-center justify-center text-emerald-700">
+                  <BookOpenText size={24} />
+                </div>
+                <div className="flex-1 text-left">
+                  <p className="font-semibold text-emerald-800 text-sm">Doa-doa Jenazah</p>
+                  <p className="text-xs text-gray-600">Bacaan doa untuk orang yang telah meninggal</p>
+                </div>
+                <ChevronRight size={18} className="text-emerald-400" />
+              </button>
+            </section>
             {/* Footer kecil */}
             <p className="mt-4 text-[10px] text-center text-gray-400">
               © 2026 Islamic Burial AR
