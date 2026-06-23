@@ -287,7 +287,7 @@ const AR = () => {
         {currentStep === -1 ? (
           <button
             onClick={() => setCurrentStep(0)}
-            className="px-10 py-2 bg-emerald-600 border-b-4 border-emerald-900 text-white rounded-lg shadow font-semibold hover:bg-emerald-700 active:border-b-0 active:border-t-4 active:border-emerald-900 transition"
+            className="px-10 py-2 mb-8 bg-emerald-600 border-b-4 border-emerald-900 text-white rounded-lg shadow font-semibold hover:bg-emerald-700 active:border-b-0 active:border-t-4 active:border-emerald-900 transition"
           >
             Mulai
           </button>
@@ -296,7 +296,7 @@ const AR = () => {
             <button
               onClick={prevStep}
               disabled={currentStep === 0}
-              className="px-10 py-2 bg-gray-100 border-b-4 border-gray-400 text-black rounded-md shadow font-semibold hover:bg-gray-300 active:border-b-0 active:border-t-4 active:border-gray-400 transition disabled:opacity-40"
+              className="px-10 py-2 mb-8 bg-gray-100 border-b-4 border-gray-400 text-black rounded-md shadow font-semibold hover:bg-gray-300 active:border-b-0 active:border-t-4 active:border-gray-400 transition disabled:opacity-40"
             >
               Prev
             </button>
@@ -307,14 +307,14 @@ const AR = () => {
                   stopAr()
                   navigate('/doa')
                 }}
-                className="px-10 py-2 bg-emerald-600 border-b-4 border-emerald-900 text-white rounded-md shadow font-semibold hover:bg-emerald-700 active:border-b-0 active:border-t-4 active:border-emerald-900 transition"
+                className="px-10 py-2 mb-8 bg-emerald-600 border-b-4 border-emerald-900 text-white rounded-md shadow font-semibold hover:bg-emerald-700 active:border-b-0 active:border-t-4 active:border-emerald-900 transition"
               >
                 Lihat Doa
               </button>
             ) : (
               <button
                 onClick={nextStep}
-                className="px-10 py-2 bg-emerald-600 border-b-4 border-emerald-900 text-white rounded-md shadow font-semibold hover:bg-emerald-700 active:border-b-0 active:border-t-4 active:border-emerald-900 transition"
+                className="px-10 py-2 mb-8 bg-emerald-600 border-b-4 border-emerald-900 text-white rounded-md shadow font-semibold hover:bg-emerald-700 active:border-b-0 active:border-t-4 active:border-emerald-900 transition"
               >
                 Next
               </button>
