@@ -24,9 +24,9 @@ const Doa = () => {
     {
       id: 3,
       title: 'Doa Talqin (Setelah Pemakaman)',
-      arab: 'يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ارْجِعِي إِلَى رَبِّكِ رَاضِيَةً مَرْضِيَّةً فَادْخُلِي فِي عِبَادِي وَادْخُلِي جَنَّتِي',
-      latin: "'Yā ayyatuhan nafsul muṭma'innah, irji'ī ilā rabbiki rāḍiyatan marḍiyyah, fadkhulī fī 'ibādī wadkhulī jannatī.'",
-      arti: 'Wahai jiwa yang tenang, kembalilah kepada Tuhanmu dengan hati yang ridha dan diridhai-Nya, maka masuklah ke dalam golongan hamba-hamba-Ku, dan masuklah ke dalam surga-Ku.',
+      arab:' لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ المُلْكُ وَلَهُ الحَمْدُ يُحْيِى وَيُمِيْتُ، وَهُوَ حَيٌّ دَائِمٌ لَا يَمُوْتُ، بِيَدِهِ الخَيْرُ يَفْعَلُ مَا يَشَاءُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ، كُلُّ نَفْسٍ ذَائِقَةُ المَوْتِ وَإِنَّمَا تُوَفَّوْنَ أُجُوْرَكُمْ يَوْمَ القِيَامَةِ، فَمَنْ زُحْزِحَ عَنِ النَّارِ وَأُدْخِلَ الجَنَّةَ فَقَدْ فَازَ، وَمَا الحَيَاةُ الدُّنْيَا إِلَّا مَتَاعُ الغُرُوْرِ',
+      latin: "'Lā ilāha illallāhu wahdahū lā syarīka lahū, lahul mulku wa lahul hamdu yuhyī wa yumītu, wa huwa dā’imun lā yamūtu, bi yadihil khayru, yaf‘alu mā yasyā’u, wa huwa ‘alā kulli syay’in qadīrun. Kullu nafsin dzā’iqatul mawti, wa innamā tuwaffawna ujūrakum yaumal qiyāmati, fa man zuhziha anin nāri wa udkhilal jannaha fa qad fāza, wa mal hayātud duniyā illā matā‘ul ghurūri.'",
+      arti: 'Tiada Tuhan selain Allah Yang Maha Esa, tiada sekutu bagi-Nya. Bagi-Nya segala kerajaan dan segala pujian. Dia yang menghidupkan dan mematikan. Dia Maha Hidup dan tidak pernah mati. Di tangan-Nyalah segala kebaikan, dan Dia Maha Kuasa atas segala sesuatu. Setiap jiwa pasti akan merasakan mati. Dan sesungguhnya pada hari kiamat sajalah disempurnakan pahalamu. Barangsiapa dijauhkan dari neraka dan dimasukkan ke dalam surga, maka sungguh ia telah beruntung. Kehidupan dunia ini tidak lain hanyalah kesenangan yang memperdayakan.',
     },
     {
       id: 4,
@@ -67,7 +67,7 @@ const Doa = () => {
               <h2 className="text-md font-bold text-emerald-800 mb-4">
                 {doa.title}
               </h2>
-              <p className="text-right text-4xl font-arabic leading-relaxed mb-4">
+              <p className="text-right text-2xl font-arabic leading-relaxed mb-4">
                 {doa.arab}
               </p>
               <p className="text-xs text-gray-600 italic mb-6">

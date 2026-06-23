@@ -42,7 +42,7 @@ export default function LandingPage() {
         </div>
 
         {/* Ayat */}
-        <div className="mt-8 w-full p-2 pl-4 border-l-4 border-emerald-500">
+        <div className="mt-8 w-full p-2 flex flex-col justify-center ">
           <blockquote className="italic text-xs text-gray-700 leading-relaxed">
             “Setiap yang bernyawa akan merasakan kematian. Kami menguji kamu
             dengan keburukan dan kebaikan sebagai cobaan. Dan hanya kepada
